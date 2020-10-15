@@ -12,6 +12,12 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+		<link
+		rel="stylesheet"
+		href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+		type="text/css"
+		/>
 
 	</head>
 	<body>
@@ -30,15 +36,39 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-3">
+					<div class="heading1">
+						Places to visit
+					</div>
+
+					<div class="row">
+						<div class="col-md-3">
+
+							<img src="Images/restaurant.png" class="Icon">
+
+						</div>
+						<div class="col-md-3">
+							<img src="Images/museum.png" class="Icon">
+
+
+						</div>
+						<div class="col-md-3">
+							<img src="Images/lm.png" class="Icon">
+
+
+						</div>
+						<div class="col-md-3">
+							<img src="Images/Aquarium.png" class="Icon">
+
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
 					<div id="map"></div>
 					
 				</div>
-				<div class="col-md-4">
-					<a href="" class="button"> Button </a>
-					<a href="" class="button"> Button </a>
-
-				</div>
+				
 			</div>
 		</div>
 

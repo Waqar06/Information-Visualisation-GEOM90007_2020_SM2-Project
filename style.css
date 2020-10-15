@@ -1,8 +1,8 @@
 .nav-link{
-	color: black !important;
+  color: black !important;
 }
 .button{
-	border: none;
+  border: none;
     display: inline-block;
     padding: 8px 16px;
     vertical-align: middle;
@@ -29,6 +29,7 @@
   width: 100%;
   height: 90vh;
 }
+
 .map-overlay {
   position: absolute;
   bottom: 0;
@@ -69,10 +70,20 @@ h2 {
   text-align: left;
 }
 .jumbotron{
-	background-color: #d4d8dc !important;
+  background-color: #d4d8dc !important;
 
 }
 .navbg {
     background-color: #d4d8dc!important;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+.Icon{
+  width: 70%;
+  /*height: 50px;*/
+  border: 1px solid lightgray;
+}
+.heading1{
+  font-size: 1.2em;
+  color: darkblue;
+  padding: 10px;
 }
