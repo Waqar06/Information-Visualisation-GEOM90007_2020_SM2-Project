@@ -24,10 +24,10 @@
 }
 #map {
   position: absolute;
-  top: 0;
+  top: 0px;
   bottom: 0 !important;
   width: 100%;
-  height: 90vh;
+  height: 100%;
 }
 
 .map-overlay {
@@ -86,4 +86,48 @@ h2 {
   font-size: 1.2em;
   color: darkblue;
   padding: 10px;
+}
+
+.row{
+  
+  height: 900px;
+  
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: rgb(129, 127, 127);
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
+}
+
+.btn-group-vertical{
+  width: 100%;
+}
+
+.btn-success{
+  margin-bottom: 15px;
+  height: 60px;
+
 }
