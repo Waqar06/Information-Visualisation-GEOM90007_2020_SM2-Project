@@ -10,7 +10,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoic2FuaXN1enphbWFuIiwiYSI6ImNrZXVuMnVvcTFjanMyc
  
 });
 	map.on('click', 'live-music-venues', function(e) {
-		
+		debugger;
 		new mapboxgl.Popup()
 		.setLngLat(e.lngLat)
 		.setHTML('<h4>Live Music Venues</h4><img src="Images/lm_01.png" style="width:100%; height:100px;"><p>Lorem ipsum dolor sit amet, Eu epicurei delicata accommodare nam. Eu propriae omnesque vel, est cu vero erat integre.</p><h2></h2>')
