@@ -108,23 +108,7 @@ h2 {
 
 
 
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-  .sidenav {
-    height: auto;
-    padding: 15px;
-  }
-  .row.content {height:auto;} 
-}
 
-.btn-group-vertical{
-  width: 100%;
-}
-
-.btn-success{
-  margin-bottom: 15px;
-  height: 60px;
-}
 
 
 /*--------------------------------------------------------------
@@ -174,7 +158,7 @@ section {
 }
 
 #header .logo h1 {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -209,7 +193,7 @@ section {
 --------------------------------------------------------------*/
 /* Desktop Navigation */
 .nav-menu, .nav-menu * {
-  margin: 0;
+  margin-right: 8px;
   padding: 0;
   list-style: none;
 }
@@ -226,7 +210,8 @@ section {
   color: #d2ece9;
   padding: 10px 15px;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -234,6 +219,7 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
 
 .nav-menu .drop-down ul {
   display: block;
@@ -244,7 +230,7 @@ section {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
+  background: #25564f;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: ease all 0.3s;
 }
@@ -256,16 +242,17 @@ section {
 }
 
 .nav-menu .drop-down li {
-  min-width: 180px;
+  min-width: 120px;
   position: relative;
 }
 
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 550;
   text-transform: none;
-  color: #25564f;
+  color: #dfe6e5;
+  text-align: center;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
@@ -412,6 +399,9 @@ section {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+.nav-item{
+  margin-left: 8px;
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -539,3 +529,40 @@ section {
   border: 2px solid #70b9b0;
 }
 
+
+/* check box css  */
+.drop-down input[type='checkbox'] {
+  display: none;
+  }
+   
+  .drop-down input[type='checkbox'] + li {
+  background-color: #3386c0;
+  display: block;
+  cursor: pointer;
+  padding: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+   
+  .drop-down input[type='checkbox'] + li {
+  background-color: #3386c0;
+  text-transform: capitalize;
+  }
+   
+  .drop-down input[type='checkbox'] + li:hover,
+  .drop-down input[type='checkbox']:checked + label {
+  background-color: #4ea0da;
+  }
+   
+  .drop-down input[type='checkbox']:checked + li:before {
+  content: '✔';
+  margin-right: 0px;
+  }
+
+  .ldrop-down input[type='checkbox']:first-child + li {
+    border-radius: 3px 3px 0 0;
+    }
+     
+  .drop-down li:last-child {
+  border-radius: 0 0 3px 3px;
+  border: none;
+  }
