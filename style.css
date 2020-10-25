@@ -28,6 +28,7 @@
   bottom: 0 !important;
   width: 100%;
   height: 100%;
+  
 }
 
 .map-overlay {
@@ -564,7 +565,7 @@ section {
   }
 
 
-  .navbar-brand{
+  /* .navbar-brand{
     color: #fff !important;
   }
   .button{
@@ -638,7 +639,7 @@ section {
   .jumbotron{
     background-color: #2d6760 !important;
   
-  }
+  } */
   .navbg {
     background-color: #2d6760;
       /* background-color: #2d6760!important; */
