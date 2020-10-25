@@ -1,130 +1,230 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoic2FuaXN1enphbWFuIiwiYSI6ImNrZXVuMnVvcTFjanMycHNhbjdxM2N6eGMifQ.KR21Chk0yGFmjK8d7Y0fHg'; 
-	var map = new mapboxgl.Map({
-	  container: 'map',
-	  style: 'mapbox://styles/sanisuzzaman/ckg49ouvv1crg19o0vajk9q00',
-	  center: [144.9, -37.8],
-	  zoom: 13
-	});
-	map.on('load', function() {
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2FuaXN1enphbWFuIiwiYSI6ImNrZXVuMnVvcTFjanMycHNhbjdxM2N6eGMifQ.KR21Chk0yGFmjK8d7Y0fHg';
 
- 
+var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/sanisuzzaman/ckg49ouvv1crg19o0vajk9q00',
+	center: [144.955, -37.814],
+	zoom: 14.5
 });
-	map.on('click', 'live-music-venues', function(e) {
-		debugger;
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML('<h4>Live Music Venues</h4><img src="Images/lm_01.png" style="width:100%; height:100px;"><p>Lorem ipsum dolor sit amet, Eu epicurei delicata accommodare nam. Eu propriae omnesque vel, est cu vero erat integre.</p><h2></h2>')
-		.addTo(map);
-	});
-	map.on('click', 'leisure-recreation-3ti81d', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
+map.on('load', function () {
+	HideAlllayers();
 
-	map.on('click', 'acquirum', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'art-gallery-museum', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.Sub_Theme+"</div><div class='pop_h2'>"+ e.features[0].properties.Feature_Na+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'cinema-theatres', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'place-of-worship', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties["Sub Theme"] +"</div><div class='pop_h2'>"+ e.features[0].properties["Feature Name"]+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'public-buildings-80629m', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'flim-and-rv-studio-5xi2kd', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'railway-stations-7oimn5', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.STATIONAM +"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'cafe-and-restaurents-melbourn-0ajg45', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.trading_na +"</div><div class='pop_h2'>"+ e.features[0].properties.Street_add+"</div>")
-		.addTo(map);
-	});
-	
-	map.on('click', 'outdoor-artworks', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'taxi-ranks-melbourne', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.loc_desc +"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'city-circle-tram-stops', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
-	map.on('click', 'Bus_stop-visitor-shuttler', function(e) {
-		
-		new mapboxgl.Popup()
-		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h1'>"+e.features[0].properties.venue_name +"</div><div class='pop_h2'>"+ e.features[0].properties.venue_address+"</div>")
-		.addTo(map);
-	});
+});
+var toggleableLayerIds = ['art-gallery-museum-visitor-info', 'public-buildings-universities', 'leisure-recreation', 'hotels-accomodations', 'cinema-theatres',
+	'place-of-worship', 'flim-and-rv-studio', 'railway-stations', 'cafe-and-restaurents-melbourn', 'live-music-venues', 'outdoor-artworks', 'taxi-ranks-melbourne', 'city-circle-tram-stops', 'Bus_stop-visitor-shuttler'];
+function HideAlllayers() {
+	for (var i = 0; i < toggleableLayerIds.length; i++) {
+		var id = toggleableLayerIds[i];
+		var visibility = map.getLayoutProperty(id, 'visibility');
+		map.setLayoutProperty(id, 'visibility', 'none');
+	}
+}
 
-	map.addControl(new mapboxgl.NavigationControl());
+var popup = new mapboxgl.Popup({
+	closeButton: false,
+	closeOnClick: false
+});
+map.on('mouseenter', 'art-gallery-museum-visitor-info', function (e) {
 
-	map.addControl(
-new MapboxDirections({
-accessToken: mapboxgl.accessToken
-}),
-'top-left'
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Art Gallery Museum</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Theme"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'art-gallery-museum-visitor-info', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'public-buildings-universities', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Public Buildings</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Theme"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'public-buildings-universities', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'leisure-recreation', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Recreational Areas</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Sub Theme"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'leisure-recreation', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'hotels-accomodations', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Hotels and Accomodations</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'hotels-accomodations', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'cinema-theatres', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Cinemas Theatres</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Sub Theme"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'cinema-theatres', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'place-of-worship', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Places of Workship</div><div class='pop_h1'>" + e.features[0].properties["Sub Theme"] + "</div><div class='pop_h2'>" + e.features[0].properties["Feature Name"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'place-of-worship', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'flim-and-rv-studio', function (e) {
+	map.getCanvas().style.cursor = 'pointer';
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Film and RV studio</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'flim-and-rv-studio', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'railway-stations', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Railway Stations</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'railway-stations', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'cafe-and-restaurents-melbourn', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Cafe and Restaturant</div><div class='pop_h1'>" + e.features[0].properties["Trading name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Street address"] + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'cafe-and-restaurents-melbourn', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'live-music-venues', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Live Music</div><div class='pop_h1'>" + e.features[0].properties.venue_name + "</div><div class='pop_h2'>" + e.features[0].properties.venue_address + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'live-music-venues', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+
+map.on('mouseenter', 'outdoor-artworks', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Outdoor Artworks</div><div class='pop_h1'>" + e.features[0].properties.title + "</div><div class='pop_h2'>" + e.features[0].properties.classification + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'outdoor-artworks', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'taxi-ranks-melbourne', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Taxi</div><div class='pop_h1'> " + e.features[0].properties.loc_desc + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'taxi-ranks-melbourne', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'city-circle-tram-stops', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> City Circle Tram Stops</div><div class='pop_h1'>" + e.features[0].properties.name + "</div>")
+		.addTo(map);
+});
+map.on('mouseleave', 'city-circle-tram-stops', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+map.on('mouseenter', 'Bus_stop-visitor-shuttler', function (e) {
+
+	popup
+		.setLngLat(e.lngLat)
+		.setHTML("<div class='pop_h'> Shuttle Bus Stop</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div>")
+		.addTo(map);
+});
+
+map.on('mouseleave', 'Bus_stop-visitor-shuttler', function () {
+	map.getCanvas().style.cursor = '';
+	popup.remove();
+});
+
+map.addControl(new mapboxgl.NavigationControl());
+
+map.addControl(
+	new MapboxDirections({
+		accessToken: mapboxgl.accessToken
+	}),
+	'top-left'
 );
-
 // Add geolocate control to the map.
 map.addControl(
-new mapboxgl.GeolocateControl({
-positionOptions: {
-enableHighAccuracy: true
-},
-trackUserLocation: true
-})
+	new mapboxgl.GeolocateControl({
+		positionOptions: {
+			enableHighAccuracy: true
+		},
+		trackUserLocation: true
+	})
 );
+
+
+
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function ShowHideLayerFunc(checkbox, layerid) {
+
+	var clickedLayer = layerid;
+	var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
+	if (checkbox.checked) {
+		map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
+	} else {
+		map.setLayoutProperty(clickedLayer, 'visibility', 'none');
+	}
+
+
+}
+function OpenDirection(radiobutton) {
+	var value = radiobutton.value;
+	if (value == "rdbDOn") {
+		MapboxDirections.visibility = true;
+		// $('#map .mapbox-ctrl-top-left').show();
+	}
+
+	else if (value == "rdbDOff") {
+		MapboxDirections.visibility = false;
+		// $('#map .mapbox-ctrl-top-left').hide();
+	}
+
+}

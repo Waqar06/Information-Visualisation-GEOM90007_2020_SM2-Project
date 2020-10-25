@@ -110,16 +110,189 @@
 
 			<!-- ======= Main Section ======= -->
 			
-			  <div class="container-fluid justify-content-center">
-	
+			<div class="container-fluid">
+				<div class="row headerinfo">
+					<div class="col-md-3">
+						<a href="https://www.dhhs.vic.gov.au/coronavirus">
+							<div class="infobox">
+								COVID-19 Information Update
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://www.dhhs.vic.gov.au/coronavirus">
+							<div class="infobox">
+								Public Transport information
+							</div>
+						</a>
+					</div>
 		
-				<div class="row">
-				  <div class="col-lg-12 order-1 order-lg-2">
-					<div id="map"></div>
-				  </div>
+					<div class="col-md-3">
+						<a href="https://www.visitmelbourne.com/Things-to-do/Top-attractions">
+							<div class="infobox">
+								Things to do in Melbourne?
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="https://www.australia.com/en/places/melbourne-and-surrounds/guide-to-melbourne.html">
+							<div class="infobox">
+								Plan your visit in Melbourne?
+							</div>
+						</a>
+					</div>
+		
 				</div>
+				<div class="row">
 		
-			  </div>
+					<div class="col-md-3">
+		
+						<div class="row">
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+											<div class="collapHeading"> <img src="assets/Images/Leisure.png" class="colImg"> Leisures
+											</div>
+										</a>
+									</div>
+									<div id="collapseOne" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'leisure-recreation')"> Recreational Areas
+											<br>
+											<input type="checkbox" value="" onclick="ShowHideLayerFunc(this,'cinema-theatres')">
+											Cinemas
+											<br>
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'flim-and-rv-studio')"> Film Studio
+											<br>
+		
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'live-music-venues')"> Music Venues
+		
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+											<div class="collapHeading"> <img src="assets/Images/Art.png" class="colImg"> Art</div>
+										</a>
+									</div>
+									<div id="collapseTwo" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+		
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'art-gallery-museum-visitor-info')"> Art Gallery
+											<br>
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'outdoor-artworks')"> Outdoor Arts
+		
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+											<div class="collapHeading"> <img src="assets/Images/publicbuild.png" class="colImg"> Public
+												Buildings</div>
+										</a>
+									</div>
+									<div id="collapseThree" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+		
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'public-buildings-universities')"> Public
+											Buildings
+											<br>
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'place-of-worship')"> Places of Workship
+		
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+											<div class="collapHeading"> <img src="assets/Images/restaurant1.png"
+													class="colImg">Restaurant</div>
+										</a>
+									</div>
+									<div id="collapseFour" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+		
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'cafe-and-restaurents-melbourn')"> Cafes and
+											Restaurants
+		
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+											<div class="collapHeading"> <img src="assets/Images/accomodation.png"
+													class="colImg">Accomodation</div>
+										</a>
+									</div>
+									<div id="collapseFive" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+		
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'hotels-accomodations')"> Hotels
+		
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+											<div class="collapHeading"> <img src="assets/Images/Transportation.png" class="colImg">
+												Transportation</div>
+										</a>
+									</div>
+									<div id="collapseSix" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+		
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'taxi-ranks-melbourne')"> Taxi
+											<br>
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'Bus_stop-visitor-shuttler')"> Shuttle Bus Stop
+		
+											<br>
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'city-circle-tram-stops')"> City circle Tram
+											Stps
+		
+											<br>
+											<input type="checkbox" value=""
+												onclick="ShowHideLayerFunc(this,'railway-stations')"> Railway stations
+										</div>
+									</div>
+								</div>
+							</div>
+		
+						</div>
+					</div>
+					<div class="col-md-9 ">
+						<div id="map"></div>
+		
+					</div>
+		
+				</div>
+			</div>
 			
 		  </main><!-- End #main -->
 		
