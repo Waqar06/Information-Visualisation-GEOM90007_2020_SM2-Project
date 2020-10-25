@@ -6,6 +6,27 @@ var map = new mapboxgl.Map({
 	center: [144.955, -37.814],
 	zoom: 14.5
 });
+var language = new MapboxLanguage();
+
+document
+.getElementById('buttons')
+.addEventListener('click', function (event) {
+var language = event.target.id.substr('button-'.length);
+// Use setLayoutProperty to set the value of a layout property in a style layer.
+// The three arguments are the id of the layer, the name of the layout property,
+// and the new property value.
+
+map.getStyle().layers.forEach(function(thisLayer){
+	debugger;
+	if(thisLayer.type == 'symbol'){
+	  map.setLayoutProperty(thisLayer.id, 'text-field', ['get','name_'+ language])
+	}
+  })
+});
+
+
+
+
 map.on('load', function () {
 	HideAlllayers();
 
