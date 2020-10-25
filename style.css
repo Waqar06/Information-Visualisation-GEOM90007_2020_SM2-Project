@@ -406,6 +406,7 @@ section {
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
+  bottom:0 !important;
 }
 
 #footer .copyright {
