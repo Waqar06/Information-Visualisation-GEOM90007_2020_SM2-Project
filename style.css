@@ -761,3 +761,8 @@ section {
     font-family: sans-serif;
     font-weight: bold;
 }
+
+.bars{visibility: hidden!important;}
+.forecastwidget{height:150px!important;}
+.precip{visibility: hidden!important;}
+.forecastwidget .footer{visibility: hidden!important;}

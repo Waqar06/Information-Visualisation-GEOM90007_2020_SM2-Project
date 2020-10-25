@@ -33,3 +33,23 @@
     $(".mobile-nav, .mobile-nav-toggle").hide();
   }
 
+// Weather widget 
+  window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+  window.weatherWidgetConfig.push({
+      selector:".weatherWidget",
+      apiKey:"5ZEMB4TLV4DPN0P1X346BEZA5", //lots of usage? Sign up for your personal key
+      location:"Melbourne, Australia", //enter an addres
+      unitGroup:"metric", //"us" or "metric"
+      forecastDays:5, //how many days forecast to show
+      title:"Melbourne", //optional title to show in the 
+      showTitle:true, 
+      showConditions:true
+  });
+ 
+  (function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.js?ver=5.3.2';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+
