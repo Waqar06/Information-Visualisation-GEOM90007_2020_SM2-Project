@@ -82,7 +82,7 @@ map.on('mouseenter', 'hotels-accomodations', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Hotels and Accomodations</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div>")
+		.setHTML("<div class='pop_h'> Hotels and Accomodations</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div><a href='https://www.booking.com/'> Book Now</a>")
 		.addTo(map);
 });
 map.on('mouseleave', 'hotels-accomodations', function () {
