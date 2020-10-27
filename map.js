@@ -9,20 +9,20 @@ var map = new mapboxgl.Map({
 var language = new MapboxLanguage();
 
 document
-.getElementById('buttons')
-.addEventListener('click', function (event) {
-var language = event.target.id.substr('button-'.length);
-// Use setLayoutProperty to set the value of a layout property in a style layer.
-// The three arguments are the id of the layer, the name of the layout property,
-// and the new property value.
+	.getElementById('buttons')
+	.addEventListener('click', function (event) {
+		var language = event.target.id.substr('button-'.length);
+		// Use setLayoutProperty to set the value of a layout property in a style layer.
+		// The three arguments are the id of the layer, the name of the layout property,
+		// and the new property value.
 
-map.getStyle().layers.forEach(function(thisLayer){
-	debugger;
-	if(thisLayer.type == 'symbol'){
-	  map.setLayoutProperty(thisLayer.id, 'text-field', ['get','name_'+ language])
-	}
-  })
-});
+		map.getStyle().layers.forEach(function (thisLayer) {
+			debugger;
+			if (thisLayer.type == 'symbol') {
+				map.setLayoutProperty(thisLayer.id, 'text-field', ['get', 'name_' + language])
+			}
+		})
+	});
 
 
 
@@ -42,7 +42,7 @@ function HideAlllayers() {
 }
 
 var popup = new mapboxgl.Popup({
-	closeButton: false,
+	closeButton: true,
 	closeOnClick: false
 });
 map.on('mouseenter', 'art-gallery-museum-visitor-info', function (e) {
@@ -54,7 +54,6 @@ map.on('mouseenter', 'art-gallery-museum-visitor-info', function (e) {
 });
 map.on('mouseleave', 'art-gallery-museum-visitor-info', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'public-buildings-universities', function (e) {
 
@@ -65,7 +64,6 @@ map.on('mouseenter', 'public-buildings-universities', function (e) {
 });
 map.on('mouseleave', 'public-buildings-universities', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'leisure-recreation', function (e) {
 
@@ -76,18 +74,16 @@ map.on('mouseenter', 'leisure-recreation', function (e) {
 });
 map.on('mouseleave', 'leisure-recreation', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'hotels-accomodations', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Hotels and Accomodations</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div><a href='https://www.booking.com/'> Book Now</a>")
+		.setHTML("<div class='pop_h'> Hotels and Accomodations</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div><div class='popup_link'><a href='https://www.booking.com/' target='_blank'> Book Now</a></div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'hotels-accomodations', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'cinema-theatres', function (e) {
 
@@ -98,7 +94,6 @@ map.on('mouseenter', 'cinema-theatres', function (e) {
 });
 map.on('mouseleave', 'cinema-theatres', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'place-of-worship', function (e) {
 
@@ -109,7 +104,6 @@ map.on('mouseenter', 'place-of-worship', function (e) {
 });
 map.on('mouseleave', 'place-of-worship', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'flim-and-rv-studio', function (e) {
 	map.getCanvas().style.cursor = 'pointer';
@@ -120,7 +114,6 @@ map.on('mouseenter', 'flim-and-rv-studio', function (e) {
 });
 map.on('mouseleave', 'flim-and-rv-studio', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'railway-stations', function (e) {
 
@@ -131,7 +124,6 @@ map.on('mouseenter', 'railway-stations', function (e) {
 });
 map.on('mouseleave', 'railway-stations', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'cafe-and-restaurents-melbourn', function (e) {
 
@@ -142,7 +134,6 @@ map.on('mouseenter', 'cafe-and-restaurents-melbourn', function (e) {
 });
 map.on('mouseleave', 'cafe-and-restaurents-melbourn', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'live-music-venues', function (e) {
 
@@ -153,7 +144,6 @@ map.on('mouseenter', 'live-music-venues', function (e) {
 });
 map.on('mouseleave', 'live-music-venues', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 
 map.on('mouseenter', 'outdoor-artworks', function (e) {
@@ -165,7 +155,6 @@ map.on('mouseenter', 'outdoor-artworks', function (e) {
 });
 map.on('mouseleave', 'outdoor-artworks', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'taxi-ranks-melbourne', function (e) {
 
@@ -176,7 +165,6 @@ map.on('mouseenter', 'taxi-ranks-melbourne', function (e) {
 });
 map.on('mouseleave', 'taxi-ranks-melbourne', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'city-circle-tram-stops', function (e) {
 
@@ -187,7 +175,6 @@ map.on('mouseenter', 'city-circle-tram-stops', function (e) {
 });
 map.on('mouseleave', 'city-circle-tram-stops', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 map.on('mouseenter', 'Bus_stop-visitor-shuttler', function (e) {
 
@@ -199,9 +186,20 @@ map.on('mouseenter', 'Bus_stop-visitor-shuttler', function (e) {
 
 map.on('mouseleave', 'Bus_stop-visitor-shuttler', function () {
 	map.getCanvas().style.cursor = '';
-	popup.remove();
 });
 
+
+map.addControl(
+	new MapboxGeocoder({
+	accessToken: mapboxgl.accessToken,
+	mapboxgl: mapboxgl,
+	proximity: {
+		longitude: -144.9631,
+		latitude: 37.8136
+	  }
+	})
+	);
+	
 map.addControl(new mapboxgl.NavigationControl());
 
 map.addControl(
@@ -219,6 +217,7 @@ map.addControl(
 		trackUserLocation: true
 	})
 );
+
 
 
 
