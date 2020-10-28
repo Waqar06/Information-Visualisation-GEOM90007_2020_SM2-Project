@@ -164,7 +164,9 @@ h2 {
   background-color: #f1f1f1;
   height: 100%;
 }
-
+.drop_text{
+  word-wrap: break-word !important;
+}
 
 
 
