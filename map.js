@@ -59,7 +59,7 @@ map.on('mouseenter', 'public-buildings-universities', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Public Buildings</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Theme"] + "</div>")
+		.setHTML("<div class='pop_h'> Public Building</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Theme"] + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'public-buildings-universities', function () {
@@ -69,7 +69,7 @@ map.on('mouseenter', 'leisure-recreation', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Recreational Areas</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Sub Theme"] + "</div>")
+		.setHTML("<div class='pop_h'> Recreational Area</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Sub Theme"] + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'leisure-recreation', function () {
@@ -79,7 +79,7 @@ map.on('mouseenter', 'hotels-accomodations', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Hotels and Accomodations</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div><div class='popup_link'><a href='https://www.booking.com/' target='_blank'> Book Now</a></div>")
+		.setHTML("<div class='pop_h'> Hotel and Accomodation</div><div class='pop_h1'>" + e.features[0].properties.Name + "</div><div class='pop_h2'>" + e.features[0].properties.Address + "</div><div class='popup_link'><a href='https://www.booking.com/' target='_blank'> Book Now</a></div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'hotels-accomodations', function () {
@@ -89,7 +89,7 @@ map.on('mouseenter', 'cinema-theatres', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Cinemas Theatres</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Sub Theme"] + "</div>")
+		.setHTML("<div class='pop_h'> Cinemas Theatre</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div><div class='pop_h2'>" + e.features[0].properties["Sub Theme"] + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'cinema-theatres', function () {
@@ -99,7 +99,7 @@ map.on('mouseenter', 'place-of-worship', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Places of Workship</div><div class='pop_h1'>" + e.features[0].properties["Sub Theme"] + "</div><div class='pop_h2'>" + e.features[0].properties["Feature Name"] + "</div>")
+		.setHTML("<div class='pop_h'> Place of Workship</div><div class='pop_h1'>" + e.features[0].properties["Sub Theme"] + "</div><div class='pop_h2'>" + e.features[0].properties["Feature Name"] + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'place-of-worship', function () {
@@ -119,7 +119,7 @@ map.on('mouseenter', 'railway-stations', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Railway Stations</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div>")
+		.setHTML("<div class='pop_h'> Railway Station</div><div class='pop_h1'>" + e.features[0].properties["Feature Name"] + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'railway-stations', function () {
@@ -150,7 +150,7 @@ map.on('mouseenter', 'outdoor-artworks', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Outdoor Artworks</div><div class='pop_h1'>" + e.features[0].properties.title + "</div><div class='pop_h2'>" + e.features[0].properties.classification + "</div>")
+		.setHTML("<div class='pop_h'> Outdoor Artwork</div><div class='pop_h1'>" + e.features[0].properties.title + "</div><div class='pop_h2'>" + e.features[0].properties.classification + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'outdoor-artworks', function () {
@@ -160,7 +160,7 @@ map.on('mouseenter', 'taxi-ranks-melbourne', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> Taxi</div><div class='pop_h1'> " + e.features[0].properties.loc_desc + "</div>")
+		.setHTML("<div class='pop_h'> Taxi Rank</div><div class='pop_h1'> " + e.features[0].properties.loc_desc + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'taxi-ranks-melbourne', function () {
@@ -170,7 +170,7 @@ map.on('mouseenter', 'city-circle-tram-stops', function (e) {
 
 	popup
 		.setLngLat(e.lngLat)
-		.setHTML("<div class='pop_h'> City Circle Tram Stops</div><div class='pop_h1'>" + e.features[0].properties.name + "</div>")
+		.setHTML("<div class='pop_h'> City Circle Tram Stop</div><div class='pop_h1'>" + e.features[0].properties.name + "</div>")
 		.addTo(map);
 });
 map.on('mouseleave', 'city-circle-tram-stops', function () {
