@@ -60,7 +60,7 @@
       return response.json();
     }).then(data => {
       // Work with JSON data here
-      debugger;
+     
       var ActiveCases= data.features[0].attributes["ActiveCases"];
       var TotalCases= data.features[0].attributes["Cases"];
       document.getElementById("totalCases").innerHTML = TotalCases;
