@@ -38,8 +38,8 @@
   position: absolute;
   top: 0px;
   bottom: 0 !important;
-  width: 96%;
-  height: 90vh;
+  width: 98%;
+  height: 80vh;
   
 }
 #mapbox-directions-origin-input .mapboxgl-ctrl-geocoder {
@@ -806,6 +806,10 @@ section {
     padding: 10px !important;
   }
   .collapHeading{
+   width:100%;
+   text-align: center;
+  }
+  .collapHeading_Text{
     text-align:center;
     color:#2d6760;
   }
@@ -887,3 +891,6 @@ section {
 .forecastwidget{height:150px!important;}
 .precip{visibility: hidden!important;}
 .forecastwidget .footer{visibility: hidden!important;}
+.card-header {
+  padding: .12rem 1rem !important;
+}
