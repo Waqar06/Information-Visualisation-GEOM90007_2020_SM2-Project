@@ -50,6 +50,23 @@
   var d = document, s = d.createElement('script');
   s.src = 'https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.js?ver=5.3.2';
   s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
+   (d.head || d.body).appendChild(s);
+   })();
 
+
+
+    var apiUrl = 'https://services1.arcgis.com/vHnIGBHHqDR6y0CR/arcgis/rest/services/Victorian_LGA_Cases/FeatureServer/0/query?where=OBJECTID%3D173&outFields=*&outSR=4326&f=json';
+    fetch(apiUrl).then(response => {
+      return response.json();
+    }).then(data => {
+      // Work with JSON data here
+      debugger;
+      var ActiveCases= data.features[0].attributes["ActiveCases"];
+      var TotalCases= data.features[0].attributes["Cases"];
+      document.getElementById("totalCases").innerHTML = TotalCases;
+      document.getElementById("activeCases").innerHTML = ActiveCases;
+    }).catch(err => {
+      // Do something for an error here
+      document.getElementById("totalCases").innerHTML = "No data";
+      document.getElementById("activeCases").innerHTML = "No data";
+    });

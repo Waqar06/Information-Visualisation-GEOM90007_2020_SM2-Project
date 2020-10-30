@@ -55,10 +55,15 @@ type="text/css"
 			  </div>
 			  <nav class="nav-menu float-right d-none d-lg-block">
 				<ul>
-				  <li class=" nav-item">
-					  <a href="https://www.dhhs.vic.gov.au/coronavirus" target="_blank">COVID-19 Information Update</a>
-				  </li>
-				  <li class=" nav-item">
+				
+				  <li class="drop-down nav-item"><a href="">COVID-19 Information</a>
+					<ul  id="buttons">
+					
+					 <li><a href="#" data-toggle="modal" data-target="#myModal">COVID-19 Tracker</a></li>
+					 <li><a href="https://www.dhhs.vic.gov.au/coronavirus" target="_blank">COVID-19 Support</a></li>
+					</ul>
+				</li>
+				  <li class="nav-item">
 					<a href="https://www.ptv.vic.gov.au/" target="_blank">Public Transport Information</a>
 				</li>				
 				
@@ -94,7 +99,47 @@ type="text/css"
 		
 		  
 		  <main id="main">
-			  
+			    <!-- Modal -->
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLongTitle">Melbourne COVID-19 Tracker</h5> 
+		  <img src="assets/Images/corona.png" alt="" class="cornaicon">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<div class="row">
+				<div class="total-cases" >
+				  <div class="title">Total Cases</div>
+				  <div class="value" id="totalCases">0</div>
+				
+				</div>
+				<div class="recovered" >
+				  <div class="title">Active Cases</div>
+				  <div class="value" id="activeCases">0</div>
+		
+				</div>
+				<div class="deaths">
+				  <div class="title">Deaths</div>
+				  <div class="value">0</div>
+			
+				</div>
+			</div>
+			  </div>
+		</div>
+		<div class="modal-footer">
+		  
+		</div>
+	  </div>
+	</div>
+  </div>
 			<div class="weatherWidget forecastwidget" ></div>
 			<!-- ======= Main Section ======= -->
 			

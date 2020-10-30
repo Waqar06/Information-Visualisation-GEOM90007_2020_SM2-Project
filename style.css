@@ -894,3 +894,63 @@ section {
 .card-header {
   padding: .12rem 1rem !important;
 }
+
+/* -------- LATEST Corona REPORT -------- */
+.latest-report{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  color: #FFF;
+}
+
+.country,
+.total-cases,
+.recovered,
+.deaths{
+  height: 100px;
+  margin-left:25px;
+}
+
+.name{
+  font-size: 2.2em;
+  color: #be64f1;
+  font-weight: bold;
+}
+
+.change-country{
+  cursor: pointer;
+}
+
+.title{
+  font-size: 1.3em;
+}
+.total-cases .value{
+  font-size: 2em;
+  font-weight: bold;
+}
+.recovered .value{
+  font-size: 2em;
+  font-weight: bold;
+  color: #009688;
+}
+.deaths .value{
+  font-size: 2em;
+  font-weight: bold;
+  color: #f44336;
+}
+.new-value{
+  font-size: 1.3em;
+}
+.cornaicon{
+  width:8%;
+  margin-left: 20px;
+}
+.modal-header{
+  background:#2d6760!important;
+  color: white;
+}
