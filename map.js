@@ -17,7 +17,7 @@ document
 		// and the new property value.
 
 		map.getStyle().layers.forEach(function (thisLayer) {
-			debugger;
+		
 			if (thisLayer.type == 'symbol') {
 				map.setLayoutProperty(thisLayer.id, 'text-field', ['get', 'name_' + language])
 			}
@@ -197,7 +197,7 @@ map.addControl(
 		longitude: -144.9631,
 		latitude: 37.8136
 	  }
-	})
+	}),'top-left'
 	);
 	
 map.addControl(new mapboxgl.NavigationControl());
