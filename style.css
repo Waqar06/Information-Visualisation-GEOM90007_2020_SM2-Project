@@ -954,3 +954,9 @@ section {
   background:#2d6760!important;
   color: white;
 }
+.modal-header .close{
+  color:white!important;
+}
+.modal-content{
+  width: 85%!important;
+}
