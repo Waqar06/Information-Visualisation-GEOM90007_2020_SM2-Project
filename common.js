@@ -37,7 +37,7 @@
   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
   window.weatherWidgetConfig.push({
       selector:".weatherWidget",
-      apiKey:"D9MEGAH3BLHHWDGYV6R7HDC5N",//"5ZEMB4TLV4DPN0P1X346BEZA5", //lots of usage? Sign up for your personal key
+      apiKey:"D9MEGAH3BLHHWDGYV6R7HDC5N",//"5ZEMB4TLV4DPN0P1X346BEZA5", 
       location:"Melbourne, Australia", //enter an addres
       unitGroup:"metric", //"us" or "metric"
       forecastDays:5, //how many days forecast to show
@@ -54,7 +54,7 @@
    })();
 
 
-
+// Corona Counter
     var apiUrl = 'https://services1.arcgis.com/vHnIGBHHqDR6y0CR/arcgis/rest/services/Victorian_LGA_Cases/FeatureServer/0/query?where=OBJECTID%3D173&outFields=*&outSR=4326&f=json';
     fetch(apiUrl).then(response => {
       return response.json();

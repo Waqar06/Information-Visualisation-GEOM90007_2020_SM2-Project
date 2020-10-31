@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
 @media (min-width: 768px){
 .col-md-2 {
     -ms-flex: 0 0 13% !important;
@@ -71,9 +74,6 @@ border-radius: 0 0 3px 0;
     background-color: #fff !important;
     width: 97% !important;
     min-width: 300px !important;
-    /* width: calc(100% - 360px);
-  min-width: calc(100% - 40px);
-  max-width: calc(100% - 40px); */
     z-index: 1 !important;
     border-radius: 4px !important;
     transition: width .25s, min-width .25s !important;
@@ -198,9 +198,6 @@ h2 {
 .drop_text{
   word-wrap: break-word !important;
 }
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -641,8 +638,9 @@ section {
   border: 2px solid #70b9b0;
 }
 
-
-/* check box css  */
+/*--------------------------------------------------------------
+# Left Navgiation
+--------------------------------------------------------------*/
 .drop-down input[type='checkbox'] {
   display: none;
   }
@@ -679,82 +677,6 @@ section {
   border: none;
   }
 
-
-  /* .navbar-brand{
-    color: #fff !important;
-  }
-  .button{
-    border: none;
-      display: inline-block;
-      padding: 8px 16px;
-      vertical-align: middle;
-      overflow: hidden;
-      text-decoration: none;
-      color: inherit;
-      background-color: inherit;
-      text-align: center;
-      cursor: pointer;
-      white-space: nowrap;
-      color: #fff !important;
-      background-color: #407977 !important;
-      width: 90%;
-      padding: 2%;
-      margin-left: 6% !important;
-      margin-right: 6% !important;
-      margin-top:5px;
-      margin-bottom: 5px;
-  }
-  #map {
-    position: absolute;
-    top: 0;
-    bottom: 0 !important;
-    width: 98%;
-  
-  }
-  
-  .map-overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.8);
-    margin-right: 20px;
-    font-family: Arial, sans-serif;
-    overflow: auto;
-    border-radius: 3px;
-  }
-  
-  #legend {
-    padding: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 18px;
-    height: 80px;
-    left: 20px;
-    margin-bottom: 40px;
-    width: 160px;
-  }
-  .legend-key {
-    display: inline-block;
-    border-radius: 20%;
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-  }
-  #title {
-    top: 0;
-    left: 20px;
-    height: 40px;
-    margin-top: 20px;
-    width: 300px;
-  }
-  h2 {
-    margin: 10px;
-    font-size: 1.2em;
-    text-align: left;
-  }
-  .jumbotron{
-    background-color: #2d6760 !important;
-  
-  } */
   .navbg {
     background-color: #2d6760;
       /* background-color: #2d6760!important; */
@@ -894,8 +816,9 @@ section {
 .card-header {
   padding: .12rem 1rem !important;
 }
-
-/* -------- LATEST Corona REPORT -------- */
+/*--------------------------------------------------------------
+# Corona Tracker
+--------------------------------------------------------------*/
 .latest-report{
   display: flex;
   justify-content: space-between;

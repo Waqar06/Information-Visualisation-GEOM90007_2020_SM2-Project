@@ -219,10 +219,6 @@ map.addControl(
 	})
 );
 
-
-
-
-
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function ShowHideLayerFunc(checkbox, layerid) {
 
@@ -240,12 +236,12 @@ function OpenDirection(radiobutton) {
 	var value = radiobutton.value;
 	if (value == "rdbDOn") {
 		MapboxDirections.visibility = true;
-		// $('#map .mapbox-ctrl-top-left').show();
+		
 	}
 
 	else if (value == "rdbDOff") {
 		MapboxDirections.visibility = false;
-		// $('#map .mapbox-ctrl-top-left').hide();
+	
 	}
 
 }
