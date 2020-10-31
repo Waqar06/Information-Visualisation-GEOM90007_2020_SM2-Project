@@ -960,3 +960,16 @@ section {
 .modal-content{
   width: 85%!important;
 }
+.date{
+  color: black!important;
+}
+.maxt{
+  color:red!important;
+}
+.mint{
+  color: blue!important;
+}
+.forecastwidget .viewchooser.selected{
+  background-color:#2d6760!important;
+}
+

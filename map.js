@@ -29,6 +29,7 @@ document
 
 map.on('load', function () {
 	HideAlllayers();
+	map.resize();
 
 });
 var toggleableLayerIds = ['art-gallery-museum-visitor-info', 'public-buildings-universities', 'leisure-recreation', 'hotels-accomodations', 'cinema-theatres',

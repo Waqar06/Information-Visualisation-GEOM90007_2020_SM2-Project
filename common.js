@@ -37,7 +37,7 @@
   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
   window.weatherWidgetConfig.push({
       selector:".weatherWidget",
-      apiKey:"5ZEMB4TLV4DPN0P1X346BEZA5", //lots of usage? Sign up for your personal key
+      apiKey:"D9MEGAH3BLHHWDGYV6R7HDC5N",//"5ZEMB4TLV4DPN0P1X346BEZA5", //lots of usage? Sign up for your personal key
       location:"Melbourne, Australia", //enter an addres
       unitGroup:"metric", //"us" or "metric"
       forecastDays:5, //how many days forecast to show
@@ -70,3 +70,4 @@
       document.getElementById("totalCases").innerHTML = "No data";
       document.getElementById("activeCases").innerHTML = "No data";
     });
+    
