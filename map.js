@@ -1,10 +1,16 @@
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2FuaXN1enphbWFuIiwiYSI6ImNrZXVuMnVvcTFjanMycHNhbjdxM2N6eGMifQ.KR21Chk0yGFmjK8d7Y0fHg';
 
+var bounds = [
+	[144.8971,-37.8507], // Southwest coordinates
+	[144.9914,-37.7754] // Northeast coordinates
+	];
+
 var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/sanisuzzaman/ckg49ouvv1crg19o0vajk9q00',
 	center: [144.955, -37.814],
-	zoom: 14.5
+	zoom: 14.5,
+	maxBounds: bounds // Sets bounds as max
 });
 var language = new MapboxLanguage();
 
@@ -194,6 +200,30 @@ map.addControl(
 	new MapboxGeocoder({
 	accessToken: mapboxgl.accessToken,
 	mapboxgl: mapboxgl,
+	// limit results to Australia
+countries: 'au',
+ 
+// further limit results to the geographic bounds representing the region of
+// Melbourne
+bbox: [144.8971,-37.8507,144.9914,-37.7754],
+ 
+// apply a client side filter to further limit results to those strictly within
+// the New South Wales region
+filter: function (item) {
+// returns true if item contains New South Wales region
+return item.context
+.map(function (i) {
+// id is in the form {index}.{id} per https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+// this example attempts to find the `region` named `New South Wales`
+return (
+i.id.split('.').shift() === 'region' &&
+i.text === 'Victoria'
+);
+})
+.reduce(function (acc, cur) {
+return acc || cur;
+});
+},
 	proximity: {
 		longitude: -144.9631,
 		latitude: 37.8136
